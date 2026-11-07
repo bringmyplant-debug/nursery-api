@@ -1,0 +1,33 @@
+{
+  "name": "@nursery-co/gateway",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The only public entry point. Routes an explicit allow-list of public paths to the services behind it.",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.4.1",
+    "@fastify/helmet": "^13.2.0",
+    "@fastify/http-proxy": "^11.6.6",
+    "@fastify/rate-limit": "^11.2.2",
+    "@nursery-co/platform": "*",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "dotenv": "^18.0.8",
+    "fastify": "^5.6.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.0",
+    "tsx": "^4.20.6",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.46.0"
+  }
+}

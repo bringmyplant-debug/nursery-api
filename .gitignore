@@ -1,0 +1,17 @@
+node_modules
+dist
+.turbo
+.DS_Store
+*.pem
+npm-debug.log*
+*.tsbuildinfo
+coverage
+
+# Secrets stay local. Every .env.example is committed; no .env ever is.
+.env
+.env.*
+!.env.example
+
+# Prisma 7 generates the client into each service's src/, as JavaScript.
+# It is a build artefact: regenerate with `npm run db:generate`.
+**/src/generated

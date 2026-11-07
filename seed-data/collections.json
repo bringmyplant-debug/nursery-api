@@ -1,0 +1,111 @@
+[
+  {
+    "slug": "pet-safe",
+    "title": "Safe Around Pets",
+    "tagline": "Non-toxic to cats and dogs",
+    "description": "Most popular houseplants — pothos, monstera, peace lily, ZZ — are toxic to cats and dogs if chewed. Every plant in this collection is not. If you have a curious animal at home, start here rather than hoping for the best.",
+    "imageUrl": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1400&q=72",
+    "sortOrder": 0,
+    "plantSlugs": [
+      "areca-palm",
+      "spider-plant",
+      "echeveria-elegans",
+      "tulsi",
+      "curry-leaf-plant",
+      "mint",
+      "hibiscus",
+      "bougainvillea",
+      "mogra-jasmine",
+      "boston-fern"
+    ]
+  },
+  {
+    "slug": "low-light",
+    "title": "For Dim Corners",
+    "tagline": "Thrives away from a window",
+    "description": "North-facing flats, internal corridors, that one corner of the living room the sun never reaches. These plants genuinely tolerate low light rather than merely surviving it for a few months before declining.",
+    "imageUrl": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1400&q=72",
+    "sortOrder": 1,
+    "plantSlugs": [
+      "snake-plant",
+      "money-plant-golden",
+      "peace-lily",
+      "zz-plant",
+      "lucky-bamboo"
+    ]
+  },
+  {
+    "slug": "air-purifying",
+    "title": "The Clean Air Set",
+    "tagline": "Foliage that earns its keep",
+    "description": "Broad-leaved, high-transpiration plants that improve the feel of a closed room. Useful through a Delhi winter or a sealed, air-conditioned office where the windows never open.",
+    "imageUrl": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=1400&q=72",
+    "sortOrder": 2,
+    "plantSlugs": [
+      "monstera-deliciosa",
+      "snake-plant",
+      "money-plant-golden",
+      "peace-lily",
+      "zz-plant",
+      "areca-palm",
+      "rubber-plant",
+      "spider-plant",
+      "tulsi",
+      "boston-fern",
+      "lucky-bamboo"
+    ]
+  },
+  {
+    "slug": "beginner",
+    "title": "Hard to Kill",
+    "tagline": "Forgiving of a missed week",
+    "description": "If something has died on you before, it was probably overwatering. These plants tolerate irregular care, travel and the occasional forgotten fortnight — the right place to rebuild some confidence.",
+    "imageUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1400&q=72",
+    "sortOrder": 3,
+    "plantSlugs": [
+      "monstera-deliciosa",
+      "snake-plant",
+      "money-plant-golden",
+      "zz-plant",
+      "rubber-plant",
+      "spider-plant",
+      "aloe-vera",
+      "jade-plant",
+      "echeveria-elegans",
+      "mint",
+      "bougainvillea",
+      "lucky-bamboo"
+    ]
+  },
+  {
+    "slug": "flowering",
+    "title": "Always in Bloom",
+    "tagline": "Colour through the season",
+    "description": "Plants grown for flowers rather than foliage, selected for long flowering windows in Indian conditions. Several of these will bloom from March straight through to October given sun and a regular feed.",
+    "imageUrl": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1400&q=72",
+    "sortOrder": 4,
+    "plantSlugs": [
+      "peace-lily",
+      "tulsi",
+      "curry-leaf-plant",
+      "hibiscus",
+      "bougainvillea",
+      "mogra-jasmine",
+      "adenium-desert-rose"
+    ]
+  },
+  {
+    "slug": "desk",
+    "title": "Desk & Shelf",
+    "tagline": "Compact enough for a workspace",
+    "description": "Under about forty centimetres and happy in artificial light. Small enough for a desk, a bookshelf or a bathroom sill without taking the surface over entirely.",
+    "imageUrl": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1400&q=72",
+    "sortOrder": 5,
+    "plantSlugs": [
+      "echeveria-elegans",
+      "ficus-bonsai",
+      "string-of-pearls",
+      "lucky-bamboo"
+    ]
+  }
+]

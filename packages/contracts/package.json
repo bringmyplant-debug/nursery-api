@@ -1,0 +1,21 @@
+{
+  "name": "@nursery-co/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Event contracts shared between services. Types and runtime guards only — no behaviour, no dependencies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\"",
+    "test": "vitest run --passWithNoTests"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.46.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@nursery-co/platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared service plumbing: config, outbox, event bus, idempotent consumers, bootstrap.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\"",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@fastify/helmet": "^13.2.0",
+    "@fastify/static": "^10.1.6",
+    "fastify": "^5.6.0",
+    "@nats-io/jetstream": "^3.4.0",
+    "@nats-io/transport-node": "^3.4.0",
+    "@nestjs/common": "^12.4.0",
+    "@nestjs/config": "^12.1.1",
+    "@nestjs/core": "^12.4.0",
+    "@nestjs/platform-fastify": "^12.4.0",
+    "@nestjs/swagger": "^12.1.1",
+    "@nursery-co/contracts": "*",
+    "@prisma/adapter-pg": "^7.10.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.46.0"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "indoor-plants",
+    "name": "Indoor Plants",
+    "sortOrder": 0
+  },
+  {
+    "slug": "flowering-plants",
+    "name": "Flowering Plants",
+    "sortOrder": 1
+  },
+  {
+    "slug": "succulents-cacti",
+    "name": "Succulents & Cacti",
+    "sortOrder": 2
+  },
+  {
+    "slug": "air-purifying",
+    "name": "Air Purifying",
+    "sortOrder": 3
+  },
+  {
+    "slug": "bonsai",
+    "name": "Bonsai",
+    "sortOrder": 4
+  },
+  {
+    "slug": "herbs-edible",
+    "name": "Herbs & Edible",
+    "sortOrder": 5
+  },
+  {
+    "slug": "outdoor-shrubs",
+    "name": "Outdoor & Shrubs",
+    "sortOrder": 6
+  },
+  {
+    "slug": "hanging-creepers",
+    "name": "Hanging & Creepers",
+    "sortOrder": 7
+  }
+]

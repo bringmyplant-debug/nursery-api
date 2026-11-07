@@ -1,0 +1,6 @@
+# The Postgres container runs these with bash. Git on Windows converts to
+# CRLF by default, and `#!/usr/bin/env bash\r` fails with "no such file or
+# directory" — an error message that points nowhere near the cause.
+*.sh text eol=lf
+*.sql text eol=lf
+docker-compose.yml text eol=lf

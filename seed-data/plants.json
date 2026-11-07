@@ -1,0 +1,1287 @@
+[
+  {
+    "slug": "monstera-deliciosa",
+    "commonName": "Monstera Deliciosa",
+    "botanicalName": "Monstera deliciosa",
+    "family": "Araceae",
+    "categorySlug": "indoor-plants",
+    "status": "PUBLISHED",
+    "summary": "The split-leaf classic. Fast, forgiving and architectural once it matures.",
+    "description": "Monstera earns its place through sheer presence — mature leaves fenestrate into the deep splits the plant is known for, and a happy specimen will put out a new leaf every three to four weeks through the monsoon. It climbs in the wild, so give it a moss pole early and the leaves will size up dramatically rather than staying small and heart-shaped.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 7,
+    "humidity": "50–70%, mist in dry months",
+    "temperature": "18–30°C",
+    "soil": "Chunky aroid mix — bark, perlite, coco peat",
+    "fertiliser": "Balanced NPK monthly, Mar–Oct",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "MONSOON",
+    "matureSize": "2–3 m indoors",
+    "growthRate": "Fast",
+    "tags": [
+      "statement",
+      "climbing",
+      "large-leaf"
+    ],
+    "publishedAt": "2026-01-12T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Monstera Deliciosa",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1463154545680-d59320fd685d?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Monstera Deliciosa",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Monstera Deliciosa",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "snake-plant",
+    "commonName": "Snake Plant",
+    "botanicalName": "Dracaena trifasciata",
+    "family": "Asparagaceae",
+    "categorySlug": "air-purifying",
+    "status": "PUBLISHED",
+    "summary": "Near-indestructible. Survives low light, missed watering and cold rooms.",
+    "description": "If a plant has died on you before, start here. Snake plant stores water in its leaves and genuinely prefers neglect — the single most common way to kill one is watering it on a schedule instead of waiting for the soil to go bone dry. It also keeps its stomata shut by day and releases oxygen overnight, which is why it ends up in bedrooms.",
+    "lightNeed": "LOW",
+    "waterNeed": "LOW",
+    "waterEveryDays": 18,
+    "humidity": "Any — tolerates dry air",
+    "temperature": "15–32°C",
+    "soil": "Free-draining cactus mix",
+    "fertiliser": "Diluted feed twice a year",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "EASY",
+    "season": "ALL_SEASON",
+    "matureSize": "60–100 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "beginner",
+      "bedroom",
+      "drought-tolerant"
+    ],
+    "publishedAt": "2026-01-12T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Snake Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Snake Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Snake Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "money-plant-golden",
+    "commonName": "Golden Money Plant",
+    "botanicalName": "Epipremnum aureum",
+    "family": "Araceae",
+    "categorySlug": "hanging-creepers",
+    "status": "PUBLISHED",
+    "summary": "Trails, climbs, roots in a water bottle. The default Indian houseplant.",
+    "description": "Money plant grows in almost any condition short of full darkness, and cuttings root in plain water within a fortnight — which is why nearly every Indian household has one passed down from a neighbour. Variegation holds best in bright indirect light; in a dim corner the leaves revert to plain green but the plant keeps going.",
+    "lightNeed": "LOW",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 8,
+    "humidity": "40–60%",
+    "temperature": "18–32°C",
+    "soil": "Any well-draining potting mix, or water",
+    "fertiliser": "Liquid feed monthly in growing season",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "ALL_SEASON",
+    "matureSize": "Trails 2–4 m",
+    "growthRate": "Fast",
+    "tags": [
+      "beginner",
+      "trailing",
+      "propagates-easily"
+    ],
+    "publishedAt": "2026-01-14T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Golden Money Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Golden Money Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Golden Money Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "peace-lily",
+    "commonName": "Peace Lily",
+    "botanicalName": "Spathiphyllum wallisii",
+    "family": "Araceae",
+    "categorySlug": "flowering-plants",
+    "status": "PUBLISHED",
+    "summary": "White spathes in low light, and it visibly tells you when it is thirsty.",
+    "description": "Peace lily is the rare flowering plant that blooms away from a window, throwing white spathes two or three times a year. Its real trick is communication — the leaves droop dramatically when dry and recover within hours of watering, which makes it an unusually good teaching plant for anyone still learning to read a pot.",
+    "lightNeed": "LOW",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 6,
+    "humidity": "50–70%",
+    "temperature": "18–30°C",
+    "soil": "Moisture-retentive peat mix",
+    "fertiliser": "Half-strength feed every 6 weeks",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": false,
+    "flowering": true,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "MONSOON",
+    "matureSize": "40–65 cm",
+    "growthRate": "Moderate",
+    "tags": [
+      "flowering",
+      "low-light",
+      "office"
+    ],
+    "publishedAt": "2026-01-18T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Peace Lily",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Peace Lily",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Peace Lily",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "zz-plant",
+    "commonName": "ZZ Plant",
+    "botanicalName": "Zamioculcas zamiifolia",
+    "family": "Araceae",
+    "categorySlug": "indoor-plants",
+    "status": "PUBLISHED",
+    "summary": "Glossy, upright and genuinely happy in a windowless office.",
+    "description": "ZZ stores water in potato-like rhizomes under the soil, so it shrugs off a month of travel without complaint. The waxy finish on its leaves is natural rather than polish, and it holds its shape in artificial light better than almost anything else — the reason it has quietly taken over Indian office lobbies.",
+    "lightNeed": "LOW",
+    "waterNeed": "LOW",
+    "waterEveryDays": 21,
+    "humidity": "Any",
+    "temperature": "15–30°C",
+    "soil": "Gritty, free-draining mix",
+    "fertiliser": "Light feed twice a year",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "ALL_SEASON",
+    "matureSize": "60–90 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "beginner",
+      "office",
+      "drought-tolerant"
+    ],
+    "publishedAt": "2026-01-20T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=72",
+        "alt": "ZZ Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1200&q=72",
+        "alt": "ZZ Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=72",
+        "alt": "ZZ Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "areca-palm",
+    "commonName": "Areca Palm",
+    "botanicalName": "Dypsis lutescens",
+    "family": "Arecaceae",
+    "categorySlug": "air-purifying",
+    "status": "PUBLISHED",
+    "summary": "Soft feathered fronds, pet-safe, and it humidifies the room it stands in.",
+    "description": "Areca transpires heavily, measurably lifting humidity in a closed room — useful in a dry Delhi winter and the reason it sits near so many air conditioners. It is non-toxic to cats and dogs, which narrows the field considerably among large indoor plants. Browning tips almost always mean fluoride in tap water rather than underwatering.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 5,
+    "humidity": "50–70%",
+    "temperature": "18–30°C",
+    "soil": "Loamy, free-draining with coco peat",
+    "fertiliser": "Monthly through summer",
+    "petSafe": true,
+    "airPurifying": true,
+    "lowMaintenance": false,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "MODERATE",
+    "season": "MONSOON",
+    "matureSize": "1.5–2.5 m",
+    "growthRate": "Moderate",
+    "tags": [
+      "pet-safe",
+      "large",
+      "humidifier"
+    ],
+    "publishedAt": "2026-01-22T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Areca Palm",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Areca Palm",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Areca Palm",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "rubber-plant",
+    "commonName": "Rubber Plant",
+    "botanicalName": "Ficus elastica",
+    "family": "Moraceae",
+    "categorySlug": "indoor-plants",
+    "status": "PUBLISHED",
+    "summary": "Broad lacquered leaves in deep burgundy-green. Grows into a small tree.",
+    "description": "A rubber plant left alone in a bright corner will become a genuine indoor tree within a few years. Wipe the leaves monthly — dust dulls the signature shine and cuts the light the plant actually receives. Cut stems weep a white latex that stains fabric and irritates skin, so prune with a cloth to hand.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 9,
+    "humidity": "40–60%",
+    "temperature": "18–30°C",
+    "soil": "Rich, well-draining potting mix",
+    "fertiliser": "Monthly, Mar–Sep",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "ALL_SEASON",
+    "matureSize": "2–3 m indoors",
+    "growthRate": "Moderate",
+    "tags": [
+      "statement",
+      "tree",
+      "glossy"
+    ],
+    "publishedAt": "2026-01-25T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1508022713622-df2d8fb7b4cd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Rubber Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Rubber Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Rubber Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "fiddle-leaf-fig",
+    "commonName": "Fiddle Leaf Fig",
+    "botanicalName": "Ficus lyrata",
+    "family": "Moraceae",
+    "categorySlug": "indoor-plants",
+    "status": "PUBLISHED",
+    "summary": "The designer's favourite, and the one most likely to sulk after a move.",
+    "description": "Fiddle leaf figs are beautiful and famously opinionated. They want one bright spot and strongly object to being relocated, drafted or overwatered — leaf drop is nearly always a response to change rather than to neglect. Pick the position before you buy, rotate a quarter turn each week, and otherwise leave it entirely alone.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 8,
+    "humidity": "50–65%",
+    "temperature": "20–30°C",
+    "soil": "Well-draining loam with bark",
+    "fertiliser": "Every 3 weeks in growing season",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": false,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EXPERT",
+    "season": "ALL_SEASON",
+    "matureSize": "1.8–3 m indoors",
+    "growthRate": "Moderate",
+    "tags": [
+      "statement",
+      "designer",
+      "fussy"
+    ],
+    "publishedAt": "2026-01-28T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1463154545680-d59320fd685d?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Fiddle Leaf Fig",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Fiddle Leaf Fig",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Fiddle Leaf Fig",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "spider-plant",
+    "commonName": "Spider Plant",
+    "botanicalName": "Chlorophytum comosum",
+    "family": "Asparagaceae",
+    "categorySlug": "hanging-creepers",
+    "status": "PUBLISHED",
+    "summary": "Pet-safe, nearly unkillable, and it hands you free plants all year.",
+    "description": "Spider plant sends out arching runners tipped with miniature plantlets — snip one off, press it into soil, and you have another plant within a fortnight. It is genuinely non-toxic to cats and dogs, tolerates a wide range of light, and recovers quickly from almost any mistake short of standing water.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 7,
+    "humidity": "40–60%",
+    "temperature": "15–30°C",
+    "soil": "Standard potting mix",
+    "fertiliser": "Monthly in summer",
+    "petSafe": true,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "ALL_SEASON",
+    "matureSize": "30–45 cm, trails 60 cm",
+    "growthRate": "Fast",
+    "tags": [
+      "pet-safe",
+      "beginner",
+      "hanging",
+      "propagates-easily"
+    ],
+    "publishedAt": "2026-02-02T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Spider Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Spider Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1780563902385-00b7ebfd5faa?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Spider Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "aloe-vera",
+    "commonName": "Aloe Vera",
+    "botanicalName": "Aloe barbadensis miller",
+    "family": "Asphodelaceae",
+    "categorySlug": "succulents-cacti",
+    "status": "PUBLISHED",
+    "summary": "A balcony medicine cabinet. Wants sun, grit and very little water.",
+    "description": "Aloe asks for the opposite of most houseplants: direct sun, sandy soil and a thorough soak only once the pot has gone completely dry. Mature outer leaves can be cut at the base for their gel; the plant seals the wound itself within a day. Mushy translucent leaves mean too much water, never too little.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "LOW",
+    "waterEveryDays": 16,
+    "humidity": "Low — dry air preferred",
+    "temperature": "15–35°C",
+    "soil": "Sandy cactus mix with grit",
+    "fertiliser": "Rarely — twice a year at most",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "EASY",
+    "season": "SUMMER",
+    "matureSize": "30–60 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "medicinal",
+      "balcony",
+      "drought-tolerant"
+    ],
+    "publishedAt": "2026-02-05T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Aloe Vera",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Aloe Vera",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1635880624245-180ad32a7f37?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Aloe Vera",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "jade-plant",
+    "commonName": "Jade Plant",
+    "botanicalName": "Crassula ovata",
+    "family": "Crassulaceae",
+    "categorySlug": "succulents-cacti",
+    "status": "PUBLISHED",
+    "summary": "Thick-trunked and long-lived — jade plants are routinely inherited.",
+    "description": "Jade thickens into a woody miniature tree over decades and is frequently passed between generations. Grown hard in bright light with sparing water, the leaf edges blush red and the trunk gains real character; kept dim and damp it stretches thin and pale. Leaves root readily, so a dropped one is a new plant.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "LOW",
+    "waterEveryDays": 14,
+    "humidity": "Low",
+    "temperature": "15–30°C",
+    "soil": "Cactus mix with coarse sand",
+    "fertiliser": "Light feed twice a year",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "EASY",
+    "season": "SUMMER",
+    "matureSize": "45–90 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "lucky",
+      "bonsai-able",
+      "long-lived"
+    ],
+    "publishedAt": "2026-02-08T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Jade Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Jade Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Jade Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "echeveria-elegans",
+    "commonName": "Echeveria Elegans",
+    "botanicalName": "Echeveria elegans",
+    "family": "Crassulaceae",
+    "categorySlug": "succulents-cacti",
+    "status": "PUBLISHED",
+    "summary": "A pale blue-green rosette. Pet-safe and perfect on a sunny sill.",
+    "description": "Echeveria forms a tight geometric rosette with a chalky bloom on each leaf — don't rub it off, it is the plant's own sunscreen. Water at the soil rather than over the crown, which rots easily if moisture sits in the centre. Non-toxic, compact, and it offsets into clusters you can divide.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "LOW",
+    "waterEveryDays": 12,
+    "humidity": "Low",
+    "temperature": "15–32°C",
+    "soil": "Gritty succulent mix",
+    "fertiliser": "Diluted feed twice in summer",
+    "petSafe": true,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "EASY",
+    "season": "WINTER",
+    "matureSize": "10–20 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "pet-safe",
+      "desk",
+      "windowsill",
+      "compact"
+    ],
+    "publishedAt": "2026-02-10T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Echeveria Elegans",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Echeveria Elegans",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Echeveria Elegans",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "tulsi",
+    "commonName": "Tulsi (Holy Basil)",
+    "botanicalName": "Ocimum tenuiflorum",
+    "family": "Lamiaceae",
+    "categorySlug": "herbs-edible",
+    "status": "PUBLISHED",
+    "summary": "Grown in courtyards for centuries. Needs sun and regular pinching.",
+    "description": "Tulsi wants four to six hours of direct sun and sharp drainage — it resents sitting wet far more than it resents going dry. Pinch the flowering spikes out as they appear and the plant stays bushy and leafy instead of running to seed; let it flower and it will set seed and decline within the season.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 3,
+    "humidity": "40–70%",
+    "temperature": "20–35°C",
+    "soil": "Loamy, free-draining with compost",
+    "fertiliser": "Organic compost every 6 weeks",
+    "petSafe": true,
+    "airPurifying": true,
+    "lowMaintenance": false,
+    "flowering": true,
+    "placement": "OUTDOOR",
+    "difficulty": "MODERATE",
+    "season": "ALL_SEASON",
+    "matureSize": "40–75 cm",
+    "growthRate": "Fast",
+    "tags": [
+      "edible",
+      "medicinal",
+      "sacred",
+      "balcony"
+    ],
+    "publishedAt": "2026-02-14T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Tulsi (Holy Basil)",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1780563902385-00b7ebfd5faa?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Tulsi (Holy Basil)",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Tulsi (Holy Basil)",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "curry-leaf-plant",
+    "commonName": "Curry Leaf Plant",
+    "botanicalName": "Murraya koenigii",
+    "family": "Rutaceae",
+    "categorySlug": "herbs-edible",
+    "status": "PUBLISHED",
+    "summary": "A kitchen staple you only have to buy once. Slow to start, then relentless.",
+    "description": "The first year is a test of patience — curry leaf puts its energy underground before it does anything visible above the soil. From the second year it flushes hard through the monsoon, and harvesting whole stems rather than individual leaves encourages it to branch. It sulks below 10°C, so move pots in during a north Indian winter.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 4,
+    "humidity": "50–70%",
+    "temperature": "20–37°C",
+    "soil": "Rich loam with compost and sand",
+    "fertiliser": "Curd water or compost monthly",
+    "petSafe": true,
+    "airPurifying": false,
+    "lowMaintenance": false,
+    "flowering": true,
+    "placement": "OUTDOOR",
+    "difficulty": "MODERATE",
+    "season": "SUMMER",
+    "matureSize": "1.5–4 m",
+    "growthRate": "Slow then fast",
+    "tags": [
+      "edible",
+      "kitchen-garden",
+      "terrace"
+    ],
+    "publishedAt": "2026-02-16T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Curry Leaf Plant",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1635880624245-180ad32a7f37?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Curry Leaf Plant",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Curry Leaf Plant",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "mint",
+    "commonName": "Mint (Pudina)",
+    "botanicalName": "Mentha spicata",
+    "family": "Lamiaceae",
+    "categorySlug": "herbs-edible",
+    "status": "PUBLISHED",
+    "summary": "Grows so readily it needs its own pot — never plant it in a shared bed.",
+    "description": "Mint spreads by underground runners and will colonise any bed it is given, which is why experienced gardeners always isolate it in a container. Harvest aggressively from the top; the more you cut, the bushier it gets. Partial shade in peak summer keeps the leaves tender rather than bitter.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "HIGH",
+    "waterEveryDays": 2,
+    "humidity": "50–75%",
+    "temperature": "15–30°C",
+    "soil": "Moisture-retentive, rich",
+    "fertiliser": "Liquid feed every 3 weeks",
+    "petSafe": true,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "EASY",
+    "season": "MONSOON",
+    "matureSize": "25–40 cm",
+    "growthRate": "Very fast",
+    "tags": [
+      "edible",
+      "pet-safe",
+      "kitchen-garden",
+      "beginner"
+    ],
+    "publishedAt": "2026-02-18T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Mint (Pudina)",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Mint (Pudina)",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Mint (Pudina)",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "hibiscus",
+    "commonName": "Hibiscus (Gudhal)",
+    "botanicalName": "Hibiscus rosa-sinensis",
+    "family": "Malvaceae",
+    "categorySlug": "flowering-plants",
+    "status": "PUBLISHED",
+    "summary": "Dinner-plate blooms all through the warm months. Feeds heavily.",
+    "description": "Hibiscus flowers on new growth, so a hard prune in February buys you a dense, flower-covered plant by April. It is a hungry feeder — a potassium-rich feed every fortnight is the difference between a handful of blooms and continuous flowering. Each flower lasts a day; a healthy plant simply opens more tomorrow.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "HIGH",
+    "waterEveryDays": 2,
+    "humidity": "50–75%",
+    "temperature": "20–35°C",
+    "soil": "Rich loam, slightly acidic",
+    "fertiliser": "High-potassium feed fortnightly",
+    "petSafe": true,
+    "airPurifying": false,
+    "lowMaintenance": false,
+    "flowering": true,
+    "placement": "OUTDOOR",
+    "difficulty": "MODERATE",
+    "season": "SUMMER",
+    "matureSize": "1–2.5 m",
+    "growthRate": "Fast",
+    "tags": [
+      "flowering",
+      "pet-safe",
+      "terrace",
+      "pollinators"
+    ],
+    "publishedAt": "2026-02-20T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Hibiscus (Gudhal)",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Hibiscus (Gudhal)",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Hibiscus (Gudhal)",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "bougainvillea",
+    "commonName": "Bougainvillea",
+    "botanicalName": "Bougainvillea glabra",
+    "family": "Nyctaginaceae",
+    "categorySlug": "outdoor-shrubs",
+    "status": "PUBLISHED",
+    "summary": "Blazes hardest when you neglect it. Thrives on heat, sun and dry soil.",
+    "description": "Bougainvillea flowers in response to stress, which makes it the rare plant where restraint is the technique — keep it slightly dry and root-bound and it will cover itself in bracts. Rich soil and generous watering give you a wall of healthy green leaves and almost no colour. Full, unfiltered sun is non-negotiable.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "LOW",
+    "waterEveryDays": 6,
+    "humidity": "Any",
+    "temperature": "20–40°C",
+    "soil": "Lean, sharply draining",
+    "fertiliser": "Low nitrogen, phosphorus-rich, sparingly",
+    "petSafe": true,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": true,
+    "placement": "OUTDOOR",
+    "difficulty": "EASY",
+    "season": "SUMMER",
+    "matureSize": "2–6 m climbing",
+    "growthRate": "Fast",
+    "tags": [
+      "flowering",
+      "climbing",
+      "drought-tolerant",
+      "terrace"
+    ],
+    "publishedAt": "2026-02-24T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Bougainvillea",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Bougainvillea",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1508022713622-df2d8fb7b4cd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Bougainvillea",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "mogra-jasmine",
+    "commonName": "Mogra (Arabian Jasmine)",
+    "botanicalName": "Jasminum sambac",
+    "family": "Oleaceae",
+    "categorySlug": "flowering-plants",
+    "status": "PUBLISHED",
+    "summary": "The scent carries across a whole terrace at dusk. Blooms Apr–Oct.",
+    "description": "Mogra holds its fragrance back until evening, which is when a single potted plant can perfume an entire balcony. It flowers on new wood, so cut it back by a third after each flush to keep the buds coming through the season. Yellowing leaves in a Mumbai monsoon usually mean the pot is not draining fast enough.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 3,
+    "humidity": "55–80%",
+    "temperature": "20–35°C",
+    "soil": "Rich, free-draining loam",
+    "fertiliser": "Bone meal + potassium monthly in season",
+    "petSafe": true,
+    "airPurifying": false,
+    "lowMaintenance": false,
+    "flowering": true,
+    "placement": "OUTDOOR",
+    "difficulty": "MODERATE",
+    "season": "SUMMER",
+    "matureSize": "60 cm–1.5 m",
+    "growthRate": "Moderate",
+    "tags": [
+      "fragrant",
+      "flowering",
+      "pet-safe",
+      "balcony"
+    ],
+    "publishedAt": "2026-02-26T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Mogra (Arabian Jasmine)",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Mogra (Arabian Jasmine)",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1463154545680-d59320fd685d?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Mogra (Arabian Jasmine)",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "ficus-bonsai",
+    "commonName": "Ficus Bonsai",
+    "botanicalName": "Ficus retusa",
+    "family": "Moraceae",
+    "categorySlug": "bonsai",
+    "status": "PUBLISHED",
+    "summary": "The forgiving entry point into bonsai. Tolerates indoor light well.",
+    "description": "Most bonsai species resent being indoors; ficus is the exception, which is why nearly every starter bonsai sold in India is one. It back-buds freely, so mistakes with the shears grow out rather than scarring the tree permanently. Aerial roots will thicken into secondary trunks if you keep humidity high around the base.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 3,
+    "humidity": "50–70%",
+    "temperature": "18–30°C",
+    "soil": "Akadama or bonsai granulate blend",
+    "fertiliser": "Weak liquid feed fortnightly in growth",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": false,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "MODERATE",
+    "season": "ALL_SEASON",
+    "matureSize": "20–60 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "bonsai",
+      "gifting",
+      "desk",
+      "sculptural"
+    ],
+    "publishedAt": "2026-03-01T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Ficus Bonsai",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Ficus Bonsai",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Ficus Bonsai",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "adenium-desert-rose",
+    "commonName": "Adenium (Desert Rose)",
+    "botanicalName": "Adenium obesum",
+    "family": "Apocynaceae",
+    "categorySlug": "bonsai",
+    "status": "PUBLISHED",
+    "summary": "A swollen sculptural caudex topped with trumpet flowers. Loves heat.",
+    "description": "Adenium stores water in a bulbous caudex that thickens into genuine bonsai character over years — the fatter the base, the more a specimen is worth. It wants brutal sun and almost no water in winter dormancy; wet feet in cool weather rot the caudex from the inside, which is the one mistake it will not forgive.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "LOW",
+    "waterEveryDays": 10,
+    "humidity": "Low",
+    "temperature": "22–40°C",
+    "soil": "Very gritty — 50% inorganic",
+    "fertiliser": "Low-nitrogen feed monthly in summer",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": true,
+    "placement": "OUTDOOR",
+    "difficulty": "MODERATE",
+    "season": "SUMMER",
+    "matureSize": "40–90 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "bonsai",
+      "flowering",
+      "sculptural",
+      "collector"
+    ],
+    "publishedAt": "2026-03-04T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Adenium (Desert Rose)",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1463154545680-d59320fd685d?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Adenium (Desert Rose)",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Adenium (Desert Rose)",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "boston-fern",
+    "commonName": "Boston Fern",
+    "botanicalName": "Nephrolepis exaltata",
+    "family": "Nephrolepidaceae",
+    "categorySlug": "hanging-creepers",
+    "status": "PUBLISHED",
+    "summary": "Pet-safe, deeply green, and unforgiving about dry air.",
+    "description": "Boston fern is non-toxic and beautiful in a hanging basket, but it is the one plant on this list that genuinely needs humidity — a bathroom window or a pebble tray makes the difference between lush and crisp. Brown, shedding fronds are almost always dry air rather than dry soil, which catches people out.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "HIGH",
+    "waterEveryDays": 3,
+    "humidity": "60–80% — essential",
+    "temperature": "16–26°C",
+    "soil": "Peat-rich, moisture-retentive",
+    "fertiliser": "Half-strength feed monthly",
+    "petSafe": true,
+    "airPurifying": true,
+    "lowMaintenance": false,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "MODERATE",
+    "season": "MONSOON",
+    "matureSize": "40–80 cm spread",
+    "growthRate": "Moderate",
+    "tags": [
+      "pet-safe",
+      "hanging",
+      "bathroom",
+      "lush"
+    ],
+    "publishedAt": "2026-03-08T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Boston Fern",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Boston Fern",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Boston Fern",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "string-of-pearls",
+    "commonName": "String of Pearls",
+    "botanicalName": "Curio rowleyanus",
+    "family": "Asteraceae",
+    "categorySlug": "hanging-creepers",
+    "status": "PUBLISHED",
+    "summary": "Beads on a thread, cascading a metre down. Shallow roots, sparing water.",
+    "description": "String of pearls roots only in the top few centimetres, so a deep pot holds wet soil well below the roots and quietly rots them — plant it shallow and wide. The beads shrivel slightly when thirsty and plump within a day of watering, which is a more reliable signal than any schedule.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "LOW",
+    "waterEveryDays": 14,
+    "humidity": "Low–moderate",
+    "temperature": "18–28°C",
+    "soil": "Shallow, gritty succulent mix",
+    "fertiliser": "Diluted feed twice in summer",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "MODERATE",
+    "season": "WINTER",
+    "matureSize": "Trails 60–90 cm",
+    "growthRate": "Moderate",
+    "tags": [
+      "hanging",
+      "sculptural",
+      "shelf",
+      "collector"
+    ],
+    "publishedAt": "2026-03-11T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1200&q=72",
+        "alt": "String of Pearls",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1200&q=72",
+        "alt": "String of Pearls",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=72",
+        "alt": "String of Pearls",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "croton-petra",
+    "commonName": "Croton Petra",
+    "botanicalName": "Codiaeum variegatum",
+    "family": "Euphorbiaceae",
+    "categorySlug": "outdoor-shrubs",
+    "status": "PUBLISHED",
+    "summary": "Yellow, orange and crimson leaf veining. The colour needs direct sun.",
+    "description": "Croton is grown for foliage that reads like autumn year-round, but the colour is light-dependent — in shade the new leaves come out plain green and the plant loses the point of itself. It also dislikes being moved and will drop a round of leaves after relocation before settling and pushing new growth.",
+    "lightNeed": "FULL_SUN",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 4,
+    "humidity": "50–70%",
+    "temperature": "20–35°C",
+    "soil": "Rich, well-draining",
+    "fertiliser": "Balanced feed monthly in growth",
+    "petSafe": false,
+    "airPurifying": false,
+    "lowMaintenance": false,
+    "flowering": false,
+    "placement": "BOTH",
+    "difficulty": "MODERATE",
+    "season": "ALL_SEASON",
+    "matureSize": "60 cm–1.8 m",
+    "growthRate": "Moderate",
+    "tags": [
+      "colourful",
+      "terrace",
+      "hedge"
+    ],
+    "publishedAt": "2026-03-15T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Croton Petra",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Croton Petra",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Croton Petra",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "lucky-bamboo",
+    "commonName": "Lucky Bamboo",
+    "botanicalName": "Dracaena sanderiana",
+    "family": "Asparagaceae",
+    "categorySlug": "indoor-plants",
+    "status": "PUBLISHED",
+    "summary": "Grows in a vase of pebbles and water. Not actually a bamboo.",
+    "description": "Despite the name this is a dracaena, and it lives happily in nothing but water and pebbles — which makes it the easiest desk plant to keep alive and the most popular corporate gift in the category. Use filtered water; the chlorine and fluoride in tap water scorch the leaf tips over a few months.",
+    "lightNeed": "LOW",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 7,
+    "humidity": "40–60%",
+    "temperature": "18–32°C",
+    "soil": "Water with pebbles, or light potting mix",
+    "fertiliser": "A drop of hydroponic feed every 2 months",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "EASY",
+    "season": "ALL_SEASON",
+    "matureSize": "30–90 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "desk",
+      "gifting",
+      "beginner",
+      "low-light"
+    ],
+    "publishedAt": "2026-03-18T00:00:00.000Z",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Lucky Bamboo",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1635880624245-180ad32a7f37?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Lucky Bamboo",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Lucky Bamboo",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "anthurium-andraeanum",
+    "commonName": "Anthurium",
+    "botanicalName": "Anthurium andraeanum",
+    "family": "Araceae",
+    "categorySlug": "flowering-plants",
+    "status": "DRAFT",
+    "summary": "Waxy red spathes held above deep green leaves.",
+    "description": "Draft entry — care profile still being reviewed before publishing to the storefront.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 6,
+    "humidity": "60–80%",
+    "temperature": "20–30°C",
+    "soil": "Chunky aroid mix",
+    "fertiliser": "Half-strength feed monthly",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": false,
+    "flowering": true,
+    "placement": "INDOOR",
+    "difficulty": "MODERATE",
+    "season": "MONSOON",
+    "matureSize": "40–60 cm",
+    "growthRate": "Moderate",
+    "tags": [
+      "flowering",
+      "glossy"
+    ],
+    "publishedAt": null,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Anthurium",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Anthurium",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Anthurium",
+        "sortOrder": 2
+      }
+    ]
+  },
+  {
+    "slug": "philodendron-birkin",
+    "commonName": "Philodendron Birkin",
+    "botanicalName": "Philodendron 'Birkin'",
+    "family": "Araceae",
+    "categorySlug": "indoor-plants",
+    "status": "DRAFT",
+    "summary": "Cream pinstripes over dark green. A slow, compact collector's plant.",
+    "description": "Draft entry — awaiting supplier photography before publishing to the storefront.",
+    "lightNeed": "BRIGHT_INDIRECT",
+    "waterNeed": "MODERATE",
+    "waterEveryDays": 7,
+    "humidity": "55–70%",
+    "temperature": "18–29°C",
+    "soil": "Airy aroid mix",
+    "fertiliser": "Balanced feed monthly in growth",
+    "petSafe": false,
+    "airPurifying": true,
+    "lowMaintenance": true,
+    "flowering": false,
+    "placement": "INDOOR",
+    "difficulty": "MODERATE",
+    "season": "ALL_SEASON",
+    "matureSize": "40–70 cm",
+    "growthRate": "Slow",
+    "tags": [
+      "variegated",
+      "collector",
+      "desk"
+    ],
+    "publishedAt": null,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1508022713622-df2d8fb7b4cd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Philodendron Birkin",
+        "sortOrder": 0
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Philodendron Birkin",
+        "sortOrder": 1
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=72",
+        "alt": "Philodendron Birkin",
+        "sortOrder": 2
+      }
+    ]
+  }
+]

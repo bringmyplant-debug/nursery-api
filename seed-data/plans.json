@@ -1,0 +1,55 @@
+[
+  {
+    "tier": "SEED",
+    "name": "Seed",
+    "blurb": "For a single outlet testing the channel.",
+    "monthlyPaise": 99900,
+    "annualPaise": 999000,
+    "listingLimit": 25,
+    "features": [
+      "Up to 25 live plant listings",
+      "Nursery profile page",
+      "Enquiries by phone and WhatsApp",
+      "Appears in city search results",
+      "Monthly performance email"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "tier": "SAPLING",
+    "name": "Sapling",
+    "blurb": "For established nurseries with real catalogue depth.",
+    "monthlyPaise": 249900,
+    "annualPaise": 2499000,
+    "listingLimit": 150,
+    "features": [
+      "Up to 150 live plant listings",
+      "Verified partner badge",
+      "Priority placement above Seed listings",
+      "Enquiry inbox with response tracking",
+      "Photo gallery on your profile",
+      "Stock and price bulk editor",
+      "Quarterly category insights"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "tier": "CANOPY",
+    "name": "Canopy",
+    "blurb": "For multi-outlet growers and landscape suppliers.",
+    "monthlyPaise": 599900,
+    "annualPaise": 5999000,
+    "listingLimit": null,
+    "features": [
+      "Unlimited plant listings",
+      "Top placement on every plant page",
+      "Featured on the homepage and city pages",
+      "Multiple outlet locations under one account",
+      "Bulk and wholesale enquiry routing",
+      "Dedicated account manager",
+      "Early access to new catalogue additions",
+      "API access for stock sync"
+    ],
+    "sortOrder": 2
+  }
+]

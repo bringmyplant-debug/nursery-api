@@ -1,0 +1,37 @@
+{
+  "name": "nursery-api",
+  "private": true,
+  "description": "Bring My Plants — backend, as independently deployable services behind one gateway.",
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "gateway"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "dev": "turbo run dev --parallel",
+    "infra:up": "docker compose up -d --wait",
+    "infra:down": "docker compose down",
+    "infra:reset": "docker compose down -v",
+    "infra:logs": "docker compose logs -f",
+    "db:migrate": "turbo run db:deploy",
+    "db:seed": "turbo run db:seed --concurrency=1",
+    "verify:parity": "node scripts/verify-parity.js",
+    "verify:flows": "node scripts/verify-flows.js"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.16.22",
+    "@vitest/coverage-v8": "^5.1.0",
+    "turbo": "^2.11.10",
+    "typescript": "~6.0.3",
+    "unplugin-swc": "^2.0.0",
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "npm@10.9.3"
+}

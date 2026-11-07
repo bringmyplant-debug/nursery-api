@@ -1,0 +1,252 @@
+// Partner service — nurseries, plans, subscriptions, invoices.
+//
+// Ported from the monolith's schema, with three deliberate differences:
+//
+//   1. No relations to other services' tables. The monolith joined
+//      nurseries to inventory, orders and payouts; here those rows live in
+//      other databases. Cross-service references are plain ids, validated
+//      by the application and never by a foreign key.
+//   2. NurserySellability, below — the one fact other services need from
+//      this one, with a version so consumers can ignore stale updates.
+//   3. Outbox, so changes to that fact are announced reliably.
+
+generator client {
+  provider        = "prisma-client-js"
+  output          = "../src/generated/prisma"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  extensions = [postgis]
+}
+
+enum NurseryStatus {
+  PENDING
+  ACTIVE
+  SUSPENDED
+}
+
+model Nursery {
+  id        String        @id @default(uuid()) @db.Uuid
+  slug      String        @unique @db.VarChar(120)
+  name      String        @db.VarChar(160)
+  legalName String?       @db.VarChar(200)
+  status    NurseryStatus @default(PENDING)
+
+  city        String  @db.VarChar(80)
+  area        String? @db.VarChar(120)
+  addressLine String? @db.VarChar(400)
+  pincode     String? @db.VarChar(10)
+
+  /// Decimal, not Float: coordinates compared for equality or used as a
+  /// cache key must not drift.
+  latitude  Decimal? @db.Decimal(9, 6)
+  longitude Decimal? @db.Decimal(9, 6)
+  /// PostGIS point, GENERATED ALWAYS from latitude/longitude by the
+  /// migration. Declared Unsupported so Prisma knows it exists and stops
+  /// emitting a DROP on every diff; never read or written via the client.
+  location  Unsupported("geography(Point, 4326)")?
+
+  phone    String  @db.VarChar(20)
+  whatsapp String? @db.VarChar(20)
+  email    String? @db.VarChar(255)
+
+  bio              String?  @db.Text
+  hours            String?  @db.VarChar(200)
+  deliveryRadiusKm Int      @default(10)
+  specialities     String[]
+  since            Int?
+
+  verified   Boolean   @default(false)
+  verifiedAt DateTime?
+
+  /// Platform cut on this nursery's sales, in basis points (800 = 8%).
+  /// Per nursery so a partner can be onboarded on different terms without
+  /// a migration; snapshotted onto each order line by the ordering service
+  /// so changing it never rewrites past settlements.
+  commissionBps Int @default(800)
+
+  rating      Decimal? @db.Decimal(2, 1)
+  reviewCount Int      @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  members       NurseryMember[]
+  images        NurseryImage[]
+  subscriptions Subscription[]
+  sellability   NurserySellability?
+
+  @@index([status, city])
+  @@map("nurseries")
+}
+
+model NurseryImage {
+  id        String   @id @default(uuid()) @db.Uuid
+  nurseryId String   @db.Uuid
+  url       String   @db.VarChar(600)
+  alt       String?  @db.VarChar(300)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+
+  nursery Nursery @relation(fields: [nurseryId], references: [id], onDelete: Cascade)
+
+  @@index([nurseryId, sortOrder])
+  @@map("nursery_images")
+}
+
+enum NurseryMemberRole {
+  OWNER
+  MANAGER
+  STAFF
+}
+
+/// Who may act for a nursery. `userId` references the identity service's
+/// user — a plain id here, no foreign key, because that table is in a
+/// different database.
+model NurseryMember {
+  id        String            @id @default(uuid()) @db.Uuid
+  userId    String            @db.Uuid
+  nurseryId String            @db.Uuid
+  role      NurseryMemberRole @default(OWNER)
+  invitedAt DateTime?
+  joinedAt  DateTime          @default(now())
+
+  nursery Nursery @relation(fields: [nurseryId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, nurseryId])
+  @@index([nurseryId])
+  @@map("nursery_members")
+}
+
+enum PlanTier {
+  SEED
+  SAPLING
+  CANOPY
+}
+
+enum BillingPeriod {
+  MONTHLY
+  ANNUAL
+}
+
+model Plan {
+  id           String   @id @default(uuid()) @db.Uuid
+  tier         PlanTier @unique
+  name         String   @db.VarChar(80)
+  blurb        String?  @db.VarChar(300)
+  monthlyPaise Int
+  annualPaise  Int
+  /// null means unlimited.
+  listingLimit Int?
+  features     String[]
+  isActive     Boolean  @default(true)
+  sortOrder    Int      @default(0)
+
+  subscriptions Subscription[]
+
+  @@map("plans")
+}
+
+enum SubscriptionStatus {
+  TRIALING
+  ACTIVE
+  PAST_DUE
+  CANCELLED
+  EXPIRED
+}
+
+/// Subscription state lives here, not on Nursery, so history is preserved
+/// across upgrades, lapses and renewals.
+model Subscription {
+  id        String             @id @default(uuid()) @db.Uuid
+  nurseryId String             @db.Uuid
+  planId    String             @db.Uuid
+  status    SubscriptionStatus @default(TRIALING)
+  period    BillingPeriod      @default(MONTHLY)
+
+  trialEndsAt        DateTime?
+  currentPeriodStart DateTime  @default(now())
+  currentPeriodEnd   DateTime
+  cancelledAt        DateTime?
+
+  /// Razorpay subscription id. Null while billing is handled manually.
+  externalRef String? @db.VarChar(120)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  nursery  Nursery   @relation(fields: [nurseryId], references: [id], onDelete: Cascade)
+  plan     Plan      @relation(fields: [planId], references: [id], onDelete: Restrict)
+  invoices Invoice[]
+
+  @@index([nurseryId, status])
+  @@index([status, currentPeriodEnd])
+  @@map("subscriptions")
+}
+
+enum InvoiceStatus {
+  DRAFT
+  ISSUED
+  PAID
+  VOID
+  UNCOLLECTIBLE
+}
+
+model Invoice {
+  id             String        @id @default(uuid()) @db.Uuid
+  subscriptionId String        @db.Uuid
+  number         String        @unique @db.VarChar(40)
+  amountPaise    Int
+  taxPaise       Int           @default(0)
+  status         InvoiceStatus @default(DRAFT)
+  issuedAt       DateTime?
+  dueAt          DateTime?
+  paidAt         DateTime?
+  externalRef    String?       @db.VarChar(120)
+  createdAt      DateTime      @default(now())
+
+  subscription Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+
+  @@index([subscriptionId, status])
+  @@map("invoices")
+}
+
+/// The last sellability this service announced for a nursery.
+///
+/// Sellable means: the nursery is ACTIVE and holds a live subscription.
+/// This is the platform's business rule, computed in exactly one place and
+/// shipped to other services as a fact, so none of them can re-derive it
+/// and drift.
+///
+/// `version` increases on every announced change and travels in the event.
+/// Consumers ignore any event older than the version they already hold,
+/// which makes the stream safe against reordering and redelivery.
+model NurserySellability {
+  nurseryId String   @id @db.Uuid
+  city      String   @db.VarChar(80)
+  sellable  Boolean
+  version   Int
+  updatedAt DateTime @default(now()) @updatedAt
+
+  nursery Nursery @relation(fields: [nurseryId], references: [id], onDelete: Cascade)
+
+  @@map("nursery_sellability")
+}
+
+/// Transactional outbox. An event is inserted in the same transaction as
+/// the change it announces; the relay publishes it to the bus afterwards.
+/// Column names are fixed by @nursery-co/platform's SQL — do not rename.
+model Outbox {
+  id          String    @id @db.Uuid
+  seq         BigInt    @unique @default(autoincrement())
+  type        String
+  payload     Json      @db.JsonB
+  createdAt   DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  publishedAt DateTime? @map("published_at") @db.Timestamptz(6)
+  attempts    Int       @default(0)
+  lastError   String?   @map("last_error")
+
+  @@map("outbox")
+}

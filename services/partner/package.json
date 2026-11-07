@@ -1,0 +1,43 @@
+{
+  "name": "@nursery-co/partner-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nurseries, plans, subscriptions and invoices. Owns the rule for whether a nursery may currently sell.",
+  "scripts": {
+    "build": "prisma generate && nest build",
+    "dev": "nest start --watch",
+    "start": "node dist/main.js",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "prisma generate && tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "db:generate": "prisma generate",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^12.4.0",
+    "@nestjs/config": "^12.1.1",
+    "@nestjs/core": "^12.4.0",
+    "@nestjs/platform-fastify": "^12.4.0",
+    "@nestjs/swagger": "^12.1.1",
+    "@nursery-co/contracts": "*",
+    "@nursery-co/platform": "*",
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "7.10.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "dotenv": "^18.0.8",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^12.0.8",
+    "@nestjs/schematics": "^12.0.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.0",
+    "prisma": "7.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.46.0"
+  }
+}

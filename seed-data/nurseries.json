@@ -1,0 +1,506 @@
+[
+  {
+    "slug": "green-canopy-nursery",
+    "name": "Green Canopy Nursery",
+    "status": "ACTIVE",
+    "city": "Pune",
+    "area": "Baner",
+    "addressLine": "Survey 118, Baner–Pashan Link Rd, Baner, Pune 411045",
+    "latitude": 18.559,
+    "longitude": 73.7868,
+    "phone": "+91 98220 11201",
+    "whatsapp": "919822011201",
+    "bio": "Three generations of growers working out of a two-acre polyhouse in Baner. Known across Pune for mature indoor specimens — the kind of six-foot monstera that is hard to find anywhere else in the city.",
+    "hours": "8:00 am – 8:00 pm, all days",
+    "deliveryRadiusKm": 18,
+    "specialities": [
+      "Indoor foliage",
+      "Large specimens",
+      "Office landscaping"
+    ],
+    "since": 2009,
+    "verified": true,
+    "rating": 4.8,
+    "reviewCount": 412,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Green Canopy Nursery",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "CANOPY",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-03-14T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "shiv-garden-center",
+    "name": "Shiv Garden Center",
+    "status": "ACTIVE",
+    "city": "Pune",
+    "area": "Kothrud",
+    "addressLine": "Plot 34, Paud Road, Kothrud, Pune 411038",
+    "latitude": 18.5074,
+    "longitude": 73.8077,
+    "phone": "+91 98220 11202",
+    "whatsapp": "919822011202",
+    "bio": "A neighbourhood garden centre with an unusually deep flowering range. Seasonal stock turns over fast, so the shelves in October look nothing like they do in March.",
+    "hours": "9:00 am – 7:30 pm, closed Tuesdays",
+    "deliveryRadiusKm": 12,
+    "specialities": [
+      "Flowering plants",
+      "Seasonal bedding",
+      "Terrace gardens"
+    ],
+    "since": 2014,
+    "verified": true,
+    "rating": 4.5,
+    "reviewCount": 236,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Shiv Garden Center",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2026-12-02T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "deccan-plant-studio",
+    "name": "Deccan Plant Studio",
+    "status": "ACTIVE",
+    "city": "Pune",
+    "area": "Koregaon Park",
+    "addressLine": "Lane 7, Koregaon Park, Pune 411001",
+    "latitude": 18.5362,
+    "longitude": 73.8939,
+    "phone": "+91 98220 11203",
+    "whatsapp": "919822011203",
+    "bio": "A small, curated studio rather than a traditional nursery. Stock is deliberately limited and skews towards collector aroids, imported ceramics and in-home styling.",
+    "hours": "10:00 am – 8:00 pm, all days",
+    "deliveryRadiusKm": 20,
+    "specialities": [
+      "Rare aroids",
+      "Designer pots",
+      "Styling consults"
+    ],
+    "since": 2019,
+    "verified": true,
+    "rating": 4.9,
+    "reviewCount": 158,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Deccan Plant Studio",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "CANOPY",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-01-20T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "hadapsar-green-house",
+    "name": "Hadapsar Green House",
+    "status": "ACTIVE",
+    "city": "Pune",
+    "area": "Hadapsar",
+    "addressLine": "Near Magarpatta Gate 3, Hadapsar, Pune 411028",
+    "latitude": 18.5089,
+    "longitude": 73.926,
+    "phone": "+91 98220 11204",
+    "whatsapp": "919822011204",
+    "bio": "Volume growers supplying Pune's eastern corridor. Best value in the city for quantity — plain nursery bags rather than decorative pots, priced accordingly.",
+    "hours": "8:30 am – 7:00 pm, all days",
+    "deliveryRadiusKm": 10,
+    "specialities": [
+      "Budget stock",
+      "Bulk orders",
+      "Saplings"
+    ],
+    "since": 2021,
+    "verified": false,
+    "rating": 4.2,
+    "reviewCount": 94,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Hadapsar Green House",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SEED",
+      "status": "TRIALING",
+      "currentPeriodEnd": "2026-10-22T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "andheri-urban-jungle",
+    "name": "Andheri Urban Jungle",
+    "status": "ACTIVE",
+    "city": "Mumbai",
+    "area": "Andheri West",
+    "addressLine": "Off Lokhandwala Complex, Andheri West, Mumbai 400053",
+    "latitude": 19.1364,
+    "longitude": 72.8296,
+    "phone": "+91 98200 11205",
+    "whatsapp": "919820011205",
+    "bio": "Built entirely around Mumbai flat living — everything is selected to work in a four-foot balcony with two hours of light, and the team will tell you honestly when something won't.",
+    "hours": "9:00 am – 9:00 pm, all days",
+    "deliveryRadiusKm": 25,
+    "specialities": [
+      "Balcony gardens",
+      "Compact plants",
+      "Apartment-friendly"
+    ],
+    "since": 2016,
+    "verified": true,
+    "rating": 4.6,
+    "reviewCount": 521,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Andheri Urban Jungle",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "CANOPY",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-02-08T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "bandra-botanicals",
+    "name": "Bandra Botanicals",
+    "status": "ACTIVE",
+    "city": "Mumbai",
+    "area": "Bandra West",
+    "addressLine": "Hill Road, Bandra West, Mumbai 400050",
+    "latitude": 19.0596,
+    "longitude": 72.8295,
+    "phone": "+91 98200 11206",
+    "whatsapp": "919820011206",
+    "bio": "A design-led storefront on Hill Road with a strong corporate gifting arm. Expect higher prices and considerably better presentation than a roadside nursery.",
+    "hours": "10:00 am – 8:30 pm, closed Mondays",
+    "deliveryRadiusKm": 15,
+    "specialities": [
+      "Statement plants",
+      "Corporate gifting",
+      "Hampers"
+    ],
+    "since": 2018,
+    "verified": true,
+    "rating": 4.7,
+    "reviewCount": 303,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1463154545680-d59320fd685d?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Bandra Botanicals",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2026-11-30T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "thane-green-acres",
+    "name": "Thane Green Acres",
+    "status": "ACTIVE",
+    "city": "Mumbai",
+    "area": "Thane West",
+    "addressLine": "Ghodbunder Road, Thane West, Mumbai 400607",
+    "latitude": 19.2183,
+    "longitude": 72.9781,
+    "phone": "+91 98200 11207",
+    "whatsapp": "919820011207",
+    "bio": "Field-grown outdoor stock on the Ghodbunder belt. The place Mumbai landscapers call when they need two hundred crotons on a Tuesday.",
+    "hours": "8:00 am – 7:00 pm, all days",
+    "deliveryRadiusKm": 22,
+    "specialities": [
+      "Outdoor shrubs",
+      "Hedging",
+      "Landscape supply"
+    ],
+    "since": 2012,
+    "verified": true,
+    "rating": 4.3,
+    "reviewCount": 187,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Thane Green Acres",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "PAST_DUE",
+      "currentPeriodEnd": "2026-09-18T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "whitefield-plant-company",
+    "name": "Whitefield Plant Company",
+    "status": "ACTIVE",
+    "city": "Bengaluru",
+    "area": "Whitefield",
+    "addressLine": "Varthur Main Road, Whitefield, Bengaluru 560066",
+    "latitude": 12.9698,
+    "longitude": 77.75,
+    "phone": "+91 98450 11208",
+    "whatsapp": "919845011208",
+    "bio": "The largest partner on the platform by catalogue depth. Runs maintenance contracts for most of the tech parks on Varthur Road, which is why their indoor range is so deep.",
+    "hours": "8:30 am – 8:00 pm, all days",
+    "deliveryRadiusKm": 30,
+    "specialities": [
+      "Indoor foliage",
+      "Hydroponics",
+      "Office contracts"
+    ],
+    "since": 2011,
+    "verified": true,
+    "rating": 4.8,
+    "reviewCount": 664,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Whitefield Plant Company",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "CANOPY",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-04-01T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "jayanagar-nursery",
+    "name": "Jayanagar Nursery",
+    "status": "ACTIVE",
+    "city": "Bengaluru",
+    "area": "Jayanagar",
+    "addressLine": "9th Block, Jayanagar, Bengaluru 560069",
+    "latitude": 12.925,
+    "longitude": 77.5938,
+    "phone": "+91 98450 11209",
+    "whatsapp": "919845011209",
+    "bio": "An old-school nursery with the best kitchen-garden range in south Bengaluru. Also the people to ask about heirloom seed, which they still sell by the paper packet.",
+    "hours": "7:00 am – 7:00 pm, all days",
+    "deliveryRadiusKm": 14,
+    "specialities": [
+      "Herbs & edible",
+      "Heirloom seeds",
+      "Organic inputs"
+    ],
+    "since": 2006,
+    "verified": true,
+    "rating": 4.4,
+    "reviewCount": 219,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Jayanagar Nursery",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2026-12-19T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "indiranagar-leaf-lab",
+    "name": "Indiranagar Leaf Lab",
+    "status": "ACTIVE",
+    "city": "Bengaluru",
+    "area": "Indiranagar",
+    "addressLine": "100 Feet Road, Indiranagar, Bengaluru 560038",
+    "latitude": 12.9784,
+    "longitude": 77.6408,
+    "phone": "+91 98450 11210",
+    "whatsapp": "919845011210",
+    "bio": "A tissue-culture lab with a small retail front. Short on volume, long on rarity — variegated stock sells out within days of being listed.",
+    "hours": "11:00 am – 9:00 pm, closed Mondays",
+    "deliveryRadiusKm": 16,
+    "specialities": [
+      "Collector plants",
+      "Variegates",
+      "Propagation workshops"
+    ],
+    "since": 2022,
+    "verified": true,
+    "rating": 4.9,
+    "reviewCount": 142,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Indiranagar Leaf Lab",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-01-05T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "gurgaon-garden-works",
+    "name": "Gurgaon Garden Works",
+    "status": "ACTIVE",
+    "city": "Delhi NCR",
+    "area": "Sector 56, Gurgaon",
+    "addressLine": "Golf Course Road, Sector 56, Gurgaon 122011",
+    "latitude": 28.4211,
+    "longitude": 77.0469,
+    "phone": "+91 98110 11211",
+    "whatsapp": "919811011211",
+    "bio": "Strong seasonal operation geared to the NCR calendar — winter annuals from October, and a genuinely useful pot and planter range year-round.",
+    "hours": "8:00 am – 8:00 pm, all days",
+    "deliveryRadiusKm": 28,
+    "specialities": [
+      "Winter annuals",
+      "Terrace setups",
+      "Pots & planters"
+    ],
+    "since": 2015,
+    "verified": true,
+    "rating": 4.5,
+    "reviewCount": 288,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Gurgaon Garden Works",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "CANOPY",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-02-25T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "south-delhi-plant-bazaar",
+    "name": "South Delhi Plant Bazaar",
+    "status": "ACTIVE",
+    "city": "Delhi NCR",
+    "area": "Chattarpur",
+    "addressLine": "Chattarpur Mandir Road, New Delhi 110074",
+    "latitude": 28.5062,
+    "longitude": 77.1855,
+    "phone": "+91 98110 11212",
+    "whatsapp": "919811011212",
+    "bio": "Part of the Chattarpur nursery belt. Wholesale pricing if you are buying more than a handful, and they rent plants out for weddings through the season.",
+    "hours": "7:30 am – 7:30 pm, all days",
+    "deliveryRadiusKm": 20,
+    "specialities": [
+      "Bulk & wholesale",
+      "Outdoor stock",
+      "Event rentals"
+    ],
+    "since": 2008,
+    "verified": false,
+    "rating": 4.1,
+    "reviewCount": 173,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=72",
+        "alt": "South Delhi Plant Bazaar",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SEED",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2026-11-11T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "jubilee-hills-greens",
+    "name": "Jubilee Hills Greens",
+    "status": "ACTIVE",
+    "city": "Hyderabad",
+    "area": "Jubilee Hills",
+    "addressLine": "Road 36, Jubilee Hills, Hyderabad 500033",
+    "latitude": 17.4326,
+    "longitude": 78.4071,
+    "phone": "+91 98490 11213",
+    "whatsapp": "919849011213",
+    "bio": "Clean, well-run retail nursery with a reliable succulent bench and a gifting counter that does a lot of volume around Diwali.",
+    "hours": "9:00 am – 8:00 pm, all days",
+    "deliveryRadiusKm": 18,
+    "specialities": [
+      "Indoor foliage",
+      "Succulents",
+      "Gifting"
+    ],
+    "since": 2017,
+    "verified": true,
+    "rating": 4.6,
+    "reviewCount": 197,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Jubilee Hills Greens",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2026-12-28T00:00:00.000Z"
+    }
+  },
+  {
+    "slug": "adyar-tropicals",
+    "name": "Adyar Tropicals",
+    "status": "ACTIVE",
+    "city": "Chennai",
+    "area": "Adyar",
+    "addressLine": "Sardar Patel Road, Adyar, Chennai 600020",
+    "latitude": 13.0067,
+    "longitude": 80.257,
+    "phone": "+91 98400 11214",
+    "whatsapp": "919840011214",
+    "bio": "Specialists in plants that actually cope with Chennai's salt air and heat. Their palm range is the deepest in the city and they will steer you away from anything that won't survive the summer.",
+    "hours": "8:00 am – 7:30 pm, all days",
+    "deliveryRadiusKm": 16,
+    "specialities": [
+      "Palms",
+      "Tropical foliage",
+      "Coastal-hardy plants"
+    ],
+    "since": 2013,
+    "verified": true,
+    "rating": 4.4,
+    "reviewCount": 211,
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1400&q=72",
+        "alt": "Adyar Tropicals",
+        "sortOrder": 0
+      }
+    ],
+    "subscription": {
+      "planTier": "SAPLING",
+      "status": "ACTIVE",
+      "currentPeriodEnd": "2027-01-16T00:00:00.000Z"
+    }
+  }
+]

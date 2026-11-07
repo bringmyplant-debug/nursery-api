@@ -1,0 +1,63 @@
+# Local infrastructure for the backend.
+#
+# One Postgres *server*, several Postgres *databases*. Each service gets its
+# own database and its own login role, and the init script revokes everyone
+# else's right to connect. That is the property that makes this
+# microservices rather than a monolith with extra processes: a service that
+# wants another service's data has to ask for it over HTTP or hear about it
+# on the bus, because the database will refuse the connection.
+#
+# Separate containers per service would give the same isolation at several
+# times the memory. This is the local-development shape; production should
+# use one managed instance per service, or at minimum one per bounded
+# context that needs independent scaling.
+#
+# Ports are offset from the monolith's stack (5433) so both can run.
+name: nursery-api
+
+services:
+  postgres:
+    image: postgis/postgis:17-3.5
+    container_name: nursery-api-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_dev
+      POSTGRES_DB: postgres
+      # Read by docker/postgres/init/01-service-databases.sh. Dev-only values.
+      PARTNER_DB_PASSWORD: partner_dev
+      INVENTORY_DB_PASSWORD: inventory_dev
+      CATALOGUE_DB_PASSWORD: catalogue_dev
+    ports:
+      - "5434:5432"
+    volumes:
+      - nursery-api-db:/var/lib/postgresql/data
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  # The message bus. JetStream is NATS's persistent layer: without it a
+  # published event vanishes if its consumer happens to be down, which is
+  # the exact failure the bus exists to absorb.
+  nats:
+    image: nats:2.15.2-alpine
+    container_name: nursery-api-nats
+    restart: unless-stopped
+    command: ["-js", "-sd", "/data", "-m", "8222"]
+    ports:
+      - "4222:4222" # client
+      - "8222:8222" # monitoring: http://localhost:8222
+    volumes:
+      - nursery-api-nats:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8222/healthz || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+volumes:
+  nursery-api-db:
+  nursery-api-nats:
