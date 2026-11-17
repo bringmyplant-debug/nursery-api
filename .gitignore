@@ -15,3 +15,6 @@ coverage
 # Prisma 7 generates the client into each service's src/, as JavaScript.
 # It is a build artefact: regenerate with `npm run db:generate`.
 **/src/generated
+
+# JWT signing keys: generated locally by scripts/generate-jwt-keys.js, never committed.
+.keys/

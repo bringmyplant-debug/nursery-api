@@ -13,13 +13,21 @@ import { PUBLIC_ROUTES, upstreamOf } from "./routes";
 /** Headers a client must never be able to smuggle through to a service. */
 const STRIPPED_REQUEST_HEADERS = ["x-internal-token"] as const;
 
+/** `false` (trust nobody), or a list of addresses/ranges/names allowed to set X-Forwarded-For. */
+export function parseTrustProxy(value: string): false | string[] {
+  const parts = value.split(",").map((p) => p.trim()).filter(Boolean);
+  return parts.length === 0 || (parts.length === 1 && parts[0].toLowerCase() === "false") ? false : parts;
+}
+
 const OPENAPI_TTL_MS = 30_000;
+
+const isAuthPath = (url: string): boolean => url === "/v1/auth" || url.startsWith("/v1/auth/") || url.startsWith("/v1/auth?");
 
 export async function buildApp(env: GatewayEnv, fetchImpl: typeof fetch = fetch): Promise<FastifyInstance> {
   const upstreams = upstreamOf(env);
 
   const app = Fastify({
-    trustProxy: true,
+    trustProxy: parseTrustProxy(env.TRUST_PROXY),
     // We assign the id ourselves (below) so only a well-formed client value
     // is ever honoured.
     requestIdHeader: false,
@@ -30,11 +38,13 @@ export async function buildApp(env: GatewayEnv, fetchImpl: typeof fetch = fetch)
   await app.register(helmet, { contentSecurityPolicy: false });
   await app.register(cors, {
     origin: env.CORS_ORIGINS.split(",").map((o) => o.trim()).filter(Boolean),
-    methods: ["GET", "HEAD", "OPTIONS"],
+    methods: ["GET", "HEAD", "POST", "PATCH", "OPTIONS"],
     maxAge: 600,
   });
   await app.register(rateLimit, {
-    max: env.RATE_LIMIT_PER_MINUTE,
+    // Auth routes get their own, much smaller, bucket (see AUTH_RATE_LIMIT_PER_MINUTE).
+    max: (request) => (isAuthPath(request.url) ? env.AUTH_RATE_LIMIT_PER_MINUTE : env.RATE_LIMIT_PER_MINUTE),
+    keyGenerator: (request) => `${isAuthPath(request.url) ? "auth" : "general"}:${request.ip}`,
     timeWindow: "1 minute",
     // A probe must never be throttled into reporting the platform as down.
     allowList: (req) => req.url.startsWith("/health"),

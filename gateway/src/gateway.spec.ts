@@ -1,6 +1,6 @@
 import Fastify, { type FastifyInstance } from "fastify";
 import type { AddressInfo } from "node:net";
-import { buildApp } from "./app";
+import { buildApp, parseTrustProxy } from "./app";
 import { GatewayEnv } from "./config";
 import { mergeOpenApi } from "./openapi-merge";
 import { requestIdFrom } from "./request-id";
@@ -23,28 +23,42 @@ async function fakeService(name: string, extra?: (app: FastifyInstance) => void)
   return { app, url: `http://127.0.0.1:${(app.server.address() as AddressInfo).port}` };
 }
 
-const envFor = (urls: { partner: string; inventory: string; catalogue: string }): GatewayEnv =>
+// A port nothing listens on, to stand in for a service that is down.
+const DEAD = "http://127.0.0.1:1";
+
+const envFor = (
+  urls: { partner: string; inventory: string; catalogue: string; identity?: string },
+  overrides: Partial<GatewayEnv> = {},
+): GatewayEnv =>
   Object.assign(new GatewayEnv(), {
     NODE_ENV: "test",
     PARTNER_URL: urls.partner,
     INVENTORY_URL: urls.inventory,
     CATALOGUE_URL: urls.catalogue,
+    IDENTITY_URL: urls.identity ?? DEAD,
+    ...overrides,
   });
 
-// A port nothing listens on, to stand in for a service that is down.
-const DEAD = "http://127.0.0.1:1";
 
 describe("gateway", () => {
   const upstreams: FastifyInstance[] = [];
   let catalogue: { app: FastifyInstance; url: string };
   let partner: { app: FastifyInstance; url: string };
+  let identity: { app: FastifyInstance; url: string };
   let gateway: FastifyInstance;
 
   beforeAll(async () => {
     catalogue = await fakeService("catalogue");
     partner = await fakeService("partner");
-    upstreams.push(catalogue.app, partner.app);
-    gateway = await buildApp(envFor({ partner: partner.url, inventory: DEAD, catalogue: catalogue.url }));
+    identity = await fakeService("identity", (app) => {
+      // Echo the body and the credentials the gateway forwarded.
+      app.post("/v1/auth/otp/request", async (req) => ({ got: req.body, authorization: req.headers.authorization ?? null }));
+      app.patch("/v1/auth/me", async (req) => ({ patched: req.body, authorization: req.headers.authorization ?? null }));
+    });
+    upstreams.push(catalogue.app, partner.app, identity.app);
+    gateway = await buildApp(
+      envFor({ partner: partner.url, inventory: DEAD, catalogue: catalogue.url, identity: identity.url }),
+    );
   });
 
   afterAll(async () => {
@@ -80,6 +94,89 @@ describe("gateway", () => {
     it.each(["POST", "PUT", "PATCH", "DELETE"] as const)("does not route %s on a read-only path", async (method) => {
       const res = await gateway.inject({ method, url: "/v1/plants", payload: {} });
       expect(res.statusCode).toBe(404);
+    });
+  });
+
+  describe("auth routes", () => {
+    it("passes a JSON body through to the identity service", async () => {
+      const res = await gateway.inject({ method: "POST", url: "/v1/auth/otp/request", payload: { phone: "9876543210" } });
+      expect(res.statusCode).toBe(200);
+      expect(res.json().got).toEqual({ phone: "9876543210" });
+    });
+
+    it("forwards the bearer token, which is how services authenticate the caller", async () => {
+      const res = await gateway.inject({
+        method: "PATCH",
+        url: "/v1/auth/me",
+        headers: { authorization: "Bearer abc.def.ghi" },
+        payload: { name: "Asha" },
+      });
+      expect(res.json()).toMatchObject({ patched: { name: "Asha" }, authorization: "Bearer abc.def.ghi" });
+    });
+
+    it("routes GET /v1/auth/* to identity", async () => {
+      expect((await gateway.inject({ url: "/v1/auth/me" })).json()).toMatchObject({ service: "identity" });
+    });
+
+    it("accepts writes only where the table says so: /v1/auth yes, the catalogue and nurseries no", async () => {
+      expect((await gateway.inject({ method: "POST", url: "/v1/nurseries/mine", payload: {} })).statusCode).toBe(404);
+      expect((await gateway.inject({ method: "PATCH", url: "/v1/plants/x", payload: {} })).statusCode).toBe(404);
+      expect((await gateway.inject({ method: "DELETE", url: "/v1/auth/me" })).statusCode).toBe(404);
+    });
+
+    it("does not expose the identity internals", async () => {
+      expect((await gateway.inject({ url: "/internal/dev/otp/9876543210" })).statusCode).toBe(404);
+    });
+
+    it("keys the limit on the real client, and only believes X-Forwarded-For from a trusted peer", async () => {
+      const app = await buildApp(
+        envFor(
+          { partner: partner.url, inventory: DEAD, catalogue: catalogue.url, identity: identity.url },
+          { AUTH_RATE_LIMIT_PER_MINUTE: 2, TRUST_PROXY: "loopback" },
+        ),
+      );
+      const hit = (remoteAddress: string, forwardedFor: string) =>
+        app
+          .inject({ method: "POST", url: "/v1/auth/otp/request", remoteAddress, headers: { "x-forwarded-for": forwardedFor }, payload: { phone: "9876543210" } })
+          .then((r) => r.statusCode);
+      try {
+        // A trusted peer (the web server) forwards each user's address: separate users, separate buckets.
+        expect(await hit("127.0.0.1", "203.0.113.1")).toBe(200);
+        expect(await hit("127.0.0.1", "203.0.113.1")).toBe(200);
+        expect(await hit("127.0.0.1", "203.0.113.1")).toBe(429);
+        expect(await hit("127.0.0.1", "203.0.113.2")).toBe(200);
+
+        // An untrusted peer cannot dodge the limit by inventing addresses.
+        expect(await hit("198.51.100.9", "10.0.0.1")).toBe(200);
+        expect(await hit("198.51.100.9", "10.0.0.2")).toBe(200);
+        expect(await hit("198.51.100.9", "10.0.0.3")).toBe(429);
+      } finally {
+        await app.close();
+      }
+    });
+
+    it("throttles /v1/auth on its own, much lower, limit without throttling the rest of the API", async () => {
+      const limited = await buildApp(
+        envFor(
+          { partner: partner.url, inventory: DEAD, catalogue: catalogue.url, identity: identity.url },
+          { AUTH_RATE_LIMIT_PER_MINUTE: 3, RATE_LIMIT_PER_MINUTE: 100 },
+        ),
+      );
+      try {
+        const statuses: number[] = [];
+        for (let i = 0; i < 5; i++) {
+          statuses.push((await limited.inject({ method: "POST", url: "/v1/auth/otp/request", payload: { phone: "9876543210" } })).statusCode);
+        }
+        expect(statuses).toEqual([200, 200, 200, 429, 429]);
+
+        // The general bucket is separate: browsing still works while auth is throttled.
+        expect((await limited.inject({ url: "/v1/plants" })).statusCode).toBe(200);
+        // And the 429 is in the gateway's own error shape, with a request id.
+        const blocked = await limited.inject({ method: "POST", url: "/v1/auth/otp/request", payload: {} });
+        expect(blocked.json()).toMatchObject({ statusCode: 429, requestId: expect.any(String) });
+      } finally {
+        await limited.close();
+      }
     });
   });
 
@@ -168,6 +265,14 @@ describe("gateway", () => {
       expect(res.statusCode).toBe(200);
       expect(res.json()["x-unavailable-services"]).toEqual(["inventory"]);
     });
+  });
+});
+
+describe("parseTrustProxy", () => {
+  it("parses lists, and treats empty or false as trusting nobody", () => {
+    expect(parseTrustProxy("loopback, 10.0.0.0/8")).toEqual(["loopback", "10.0.0.0/8"]);
+    expect(parseTrustProxy("false")).toBe(false);
+    expect(parseTrustProxy("")).toBe(false);
   });
 });
 

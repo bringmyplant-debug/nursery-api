@@ -1,0 +1,97 @@
+// Identity service: who a person is and whether they have proved it.
+//
+// Ported from the monolith's schema (User, OtpChallenge, RefreshToken), with
+// one structural change: no relations to other services. A user's nursery
+// memberships live in the partner service, keyed by this service's user id
+// as a plain value.
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum UserRole {
+  BUYER
+  ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+}
+
+model User {
+  id        String     @id @default(uuid()) @db.Uuid
+  /// E.164, Indian mobile numbers only (+91 followed by ten digits).
+  /// Phone is the primary identity: nurseries here are SMBs and a phone is
+  /// what they reliably have.
+  phone     String     @unique @db.VarChar(20)
+  /// Optional, and neither verified nor used to sign in. A contact detail.
+  email     String?    @unique @db.VarChar(255)
+  name      String     @db.VarChar(120)
+  role      UserRole   @default(BUYER)
+  status    UserStatus @default(ACTIVE)
+
+  phoneVerifiedAt DateTime
+  lastLoginAt     DateTime?
+  termsAcceptedAt DateTime
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  refreshTokens RefreshToken[]
+
+  @@index([role])
+  @@map("users")
+}
+
+/// A one-time code sent to a phone. The code is never stored: only an
+/// HMAC of it keyed with a server-side secret, so a database leak cannot be
+/// replayed into account takeover (six digits would fall to a plain hash in
+/// milliseconds; without the key the stored value is useless).
+model OtpChallenge {
+  id         String    @id @default(uuid()) @db.Uuid
+  phone      String    @db.VarChar(20)
+  codeHash   String    @db.VarChar(128)
+  attempts   Int       @default(0)
+  expiresAt  DateTime
+  /// Set when the code is used, superseded by a newer one, or abandoned.
+  consumedAt DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([phone, createdAt])
+  @@index([expiresAt])
+  @@map("otp_challenges")
+}
+
+/// Rotating refresh tokens. Every sign-in starts a family; each refresh
+/// replaces the token with a new one in the same family. Presenting a token
+/// that was already replaced is the signature of theft (the thief and the
+/// owner both hold it), and revokes the whole family.
+///
+/// Only a SHA-256 of the token is stored. The token is 256 bits of
+/// randomness, so a fast hash is sufficient; the point is that a database
+/// leak does not hand out live sessions.
+model RefreshToken {
+  id           String    @id @default(uuid()) @db.Uuid
+  userId       String    @db.Uuid
+  familyId     String    @db.Uuid
+  tokenHash    String    @unique @db.VarChar(64)
+  userAgent    String?   @db.VarChar(300)
+  expiresAt    DateTime
+  /// Set when this token was exchanged for the next one.
+  rotatedAt    DateTime?
+  replacedById String?   @db.Uuid
+  revokedAt    DateTime?
+  createdAt    DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([familyId])
+  @@index([expiresAt])
+  @@map("refresh_tokens")
+}

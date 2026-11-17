@@ -20,7 +20,9 @@
     "db:migrate": "turbo run db:deploy",
     "db:seed": "turbo run db:seed --concurrency=1",
     "verify:parity": "node scripts/verify-parity.js",
-    "verify:flows": "node scripts/verify-flows.js"
+    "verify:flows": "node scripts/verify-flows.js",
+    "verify:auth": "node scripts/verify-auth.js",
+    "keys:generate": "node scripts/generate-jwt-keys.js"
   },
   "devDependencies": {
     "@swc/core": "^1.16.22",

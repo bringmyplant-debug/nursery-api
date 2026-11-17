@@ -16,6 +16,7 @@
     "@fastify/helmet": "^13.2.0",
     "@fastify/static": "^10.1.6",
     "fastify": "^5.6.0",
+    "jsonwebtoken": "^9.0.3",
     "@nats-io/jetstream": "^3.4.0",
     "@nats-io/transport-node": "^3.4.0",
     "@nestjs/common": "^12.4.0",
@@ -31,6 +32,7 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.10.1",
     "eslint": "^9.39.0",
     "typescript": "~6.0.3",

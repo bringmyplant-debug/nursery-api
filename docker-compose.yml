@@ -28,6 +28,7 @@ services:
       PARTNER_DB_PASSWORD: partner_dev
       INVENTORY_DB_PASSWORD: inventory_dev
       CATALOGUE_DB_PASSWORD: catalogue_dev
+      IDENTITY_DB_PASSWORD: identity_dev
     ports:
       - "5434:5432"
     volumes:

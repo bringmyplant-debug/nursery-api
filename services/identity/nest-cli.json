@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "tsConfigPath": "tsconfig.build.json",
+    "assets": [
+      {
+        "comment": "The Prisma 7 client is generated JavaScript, not TypeScript, so nest build will not emit it. Copy it across or dist cannot resolve the import at runtime.",
+        "include": "generated/**/*",
+        "outDir": "dist",
+        "watchAssets": true
+      }
+    ]
+  }
+}

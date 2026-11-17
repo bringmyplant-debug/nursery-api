@@ -9,6 +9,7 @@ Boundaries follow who *owns a decision*, not which tables are near each other.
 | **partner** | nurseries, plans, subscriptions, invoices, members | whether a nursery may currently sell |
 | **inventory** | stock per (nursery, variant) | how many of a variant can be bought in a city |
 | **catalogue** | plants, variants, categories, collections, per-city prices | what exists and what it costs |
+| **identity** | users, one-time codes, sessions | who someone is; the only signer of access tokens |
 | **gateway** | nothing | which paths are public |
 
 The first row matters most. In the monolith, "does this nursery's stock count?"
@@ -140,7 +141,7 @@ key. Production rows use random UUIDs; the shared derivation is for seeds only.
 
 ## Not built
 
-- **identity, ordering, payments, notifications** services, and everything
+- **ordering, payments, notifications** services, and everything
   that needs them: auth, carts, orders, payouts, enquiries.
 - **The authoritative stock check at order time** (reservation under a row
   lock), which the eventually-consistent listing depends on.

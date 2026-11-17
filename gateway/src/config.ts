@@ -32,9 +32,36 @@ export class GatewayEnv {
   @IsNotEmpty()
   CATALOGUE_URL = "http://localhost:4103";
 
-  /** Per client IP. */
+  @IsUrl({ require_tld: false })
+  @IsNotEmpty()
+  IDENTITY_URL = "http://localhost:4104";
+
+  /**
+   * Which peers may tell us the real client address via X-Forwarded-For:
+   * a comma-separated list of IPs, CIDRs or the names `loopback`,
+   * `linklocal`, `uniquelocal`. Anyone else's forwarded header is ignored.
+   *
+   * This matters because rate limits are per client IP. If the header were
+   * trusted from anyone, an attacker could send a different fake address on
+   * every request and never be throttled. Set it to your load balancer or
+   * web-server addresses in production; `false` trusts no one.
+   */
+  @IsString()
+  TRUST_PROXY = "loopback";
+
+  /** Per client IP, for ordinary routes. */
   @Type(() => Number)
   @IsInt()
   @Min(1)
   RATE_LIMIT_PER_MINUTE = 300;
+
+  /**
+   * Per client IP, for /v1/auth. Far lower than the general limit: these
+   * routes send SMS messages and check secrets, so they are the ones worth
+   * abusing. (The identity service adds per-phone limits underneath.)
+   */
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  AUTH_RATE_LIMIT_PER_MINUTE = 20;
 }

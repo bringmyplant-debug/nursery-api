@@ -1,5 +1,5 @@
 import { Type } from "class-transformer";
-import { IsInt, IsOptional, Max, Min } from "class-validator";
+import { IsInt, IsNotEmpty, IsOptional, IsString, Max, Min } from "class-validator";
 import { ServiceEnv } from "@nursery-co/platform";
 
 export class PartnerEnv extends ServiceEnv {
@@ -18,4 +18,9 @@ export class PartnerEnv extends ServiceEnv {
   @Min(5)
   @IsOptional()
   SELLABILITY_SWEEP_SECONDS = 60;
+
+  /** Verifies access tokens. Only the identity service holds the matching private key. */
+  @IsString()
+  @IsNotEmpty()
+  JWT_PUBLIC_KEY_PATH!: string;
 }

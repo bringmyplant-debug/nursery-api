@@ -1,13 +1,15 @@
 import type { GatewayEnv } from "./config";
 
-export type ServiceName = "partner" | "inventory" | "catalogue";
+export type ServiceName = "partner" | "inventory" | "catalogue" | "identity";
+
+export type PublicMethod = "GET" | "HEAD" | "POST" | "PATCH";
 
 export interface PublicRoute {
   /** Exact path prefix. Matches the prefix itself and anything beneath it. */
   prefix: string;
   service: ServiceName;
   /** Methods the public may use. Anything else is not routed. */
-  methods: readonly ("GET" | "HEAD")[];
+  methods: readonly PublicMethod[];
 }
 
 /**
@@ -20,20 +22,25 @@ export interface PublicRoute {
  * names its routes; that guard is the first of two layers (the second is
  * the service's own token check).
  *
- * Read-only for now: every public route is GET/HEAD. Write routes join this
- * table when the identity service exists to authenticate them.
+ * Methods are listed per route, so the one place that accepts writes is
+ * visible at a glance: only /v1/auth. Everything else is still read-only.
+ * Authorisation is each service's own job (it verifies the bearer token);
+ * the gateway only decides what is reachable at all.
  */
 export const PUBLIC_ROUTES: readonly PublicRoute[] = [
   { prefix: "/v1/plants", service: "catalogue", methods: ["GET", "HEAD"] },
   { prefix: "/v1/categories", service: "catalogue", methods: ["GET", "HEAD"] },
   { prefix: "/v1/collections", service: "catalogue", methods: ["GET", "HEAD"] },
   { prefix: "/v1/plans", service: "partner", methods: ["GET", "HEAD"] },
+  { prefix: "/v1/nurseries", service: "partner", methods: ["GET", "HEAD"] },
+  { prefix: "/v1/auth", service: "identity", methods: ["GET", "HEAD", "POST", "PATCH"] },
 ];
 
 export const upstreamOf = (env: GatewayEnv): Record<ServiceName, string> => ({
   partner: env.PARTNER_URL,
   inventory: env.INVENTORY_URL,
   catalogue: env.CATALOGUE_URL,
+  identity: env.IDENTITY_URL,
 });
 
 /** Whether `path` falls under a public prefix. Used to filter the merged API description. */

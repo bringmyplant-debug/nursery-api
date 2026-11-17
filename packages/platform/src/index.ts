@@ -15,3 +15,5 @@ export * from "./messaging/outbox";
 export * from "./messaging/consumer";
 export * from "./messaging/messaging.module";
 export * from "./prisma/adapter";
+export * from "./auth/jwt";
+export * from "./auth/jwt-auth.guard";

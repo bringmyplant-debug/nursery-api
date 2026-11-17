@@ -58,3 +58,4 @@ SQL
 create_service_database partner   "${PARTNER_DB_PASSWORD:?missing}"   postgis
 create_service_database inventory "${INVENTORY_DB_PASSWORD:?missing}"
 create_service_database catalogue "${CATALOGUE_DB_PASSWORD:?missing}"
+create_service_database identity  "${IDENTITY_DB_PASSWORD:?missing}"

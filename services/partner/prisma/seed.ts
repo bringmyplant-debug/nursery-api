@@ -13,7 +13,7 @@
 import "dotenv/config";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { createPgAdapter, deterministicId, nurseryIdFor, toDatabase } from "@nursery-co/platform";
+import { createPgAdapter, deterministicId, nurseryIdFor, toDatabase, userIdFor } from "@nursery-co/platform";
 import { PrismaClient, type Prisma } from "../src/generated/prisma";
 import { SellabilityEngine } from "../src/sellability/sellability.engine";
 
@@ -68,6 +68,13 @@ async function main(): Promise<void> {
       await prisma.subscription.upsert({ where: { id: subId }, update: subData, create: subData });
     }
     console.log(`  nurseries: ${nurseries.length} (+ images, subscriptions)`);
+
+    // The seeded nursery owner (see the identity seed) manages Green Canopy.
+    // The user id is derived from their phone; this database never asks identity for it.
+    const ownerId = userIdFor("+919000000003");
+    const memberData = { id: deterministicId("member", `${ownerId}:green-canopy-nursery`), userId: ownerId, nurseryId: nurseryIdFor("green-canopy-nursery"), role: "OWNER" as const };
+    await prisma.nurseryMember.upsert({ where: { userId_nurseryId: { userId: memberData.userId, nurseryId: memberData.nurseryId } }, update: { role: memberData.role }, create: memberData });
+    console.log("  members: 1 (nursery owner -> Green Canopy)");
 
     const announced = await new SellabilityEngine(toDatabase(prisma)).reconcileDrifted();
     console.log(`  sellability: ${announced} announcement(s) queued in the outbox`);

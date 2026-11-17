@@ -55,3 +55,11 @@ export const nurseryIdFor = (slug: string): string => deterministicId("nursery",
 
 export const variantIdFor = (plantSlug: string, potSize: string): string =>
   deterministicId("variant", `${plantSlug}::${potSize}`);
+
+/**
+ * A user's id, derived from their E.164 phone number. Seeds only: the
+ * identity seed creates the user and the partner seed links that same user
+ * to a nursery, without either calling the other. Real accounts get random
+ * ids; this is what makes seeded ones agree.
+ */
+export const userIdFor = (phone: string): string => deterministicId("user", phone);
