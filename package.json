@@ -22,7 +22,8 @@
     "verify:parity": "node scripts/verify-parity.js",
     "verify:flows": "node scripts/verify-flows.js",
     "verify:auth": "node scripts/verify-auth.js",
-    "keys:generate": "node scripts/generate-jwt-keys.js"
+    "keys:generate": "node scripts/generate-jwt-keys.js",
+    "otp": "node scripts/dev-otp.js"
   },
   "devDependencies": {
     "@swc/core": "^1.16.22",
